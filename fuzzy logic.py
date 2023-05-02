@@ -214,7 +214,7 @@ df['score'] = hasilDefuzz
 bestResult = df.sort_values(by='score', ascending=False)[:10]
 notBest = df.drop(bestResult.index)
 
-bestResult['id'].to_excel('peringkat.xls', index=False, header=False)  
+bestResult['id'].to_excel('peringkat.xlsx', index=False, header=False)  
 bestResult.head(10)
 
 plt.scatter(bestResult.pelayanan,
